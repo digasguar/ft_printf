@@ -10,8 +10,16 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifdef FT_PRINTF
+#ifndef FT_PRINTF
+
 # define FT_PRINTF
 # include <stdarg.h>
+// # include "libft.h"
 
+int print_hex(unsigned long str, int i);
+int	print_char(char c);
+int print_str(char *str);
+int print_nbr(int nbr);
+int print_nbr_2(int nbr);
+int	printf_p(char *a);
 #endif
