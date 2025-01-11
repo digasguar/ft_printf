@@ -6,10 +6,11 @@
 /*   By: dgasco-g <dgasco-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/10 12:01:32 by dgasco-g          #+#    #+#             */
-/*   Updated: 2025/01/10 18:50:50 by dgasco-g         ###   ########.fr       */
+/*   Updated: 2025/01/11 14:46:50 by dgasco-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "ft_printf.h"
 
 int print_hex(unsigned long str, int i)
 {
