@@ -17,11 +17,13 @@ int	print_char(int c)
 	return (write(1, &c, 1));
 }
 
-int print_str(char *str)
+int	print_str(char *str)
 {
-	int i;
+	int	i;
 
 	i = 0;
+	if (!str)
+		return (write(1, "(null)", 6));
 	while (str[i] != '\0')
 	{
 		write(1, &str[i], 1);
@@ -47,14 +49,18 @@ int	print_nbr(int n)
 		}
 	}
 	if (n > 9)
-		len = print_nbr(n / 10);
+		len += print_nbr(n / 10);
 	print_char((n % 10) + 48);
 	return (len);
 }
 
-int print_nbr_2(int nbr)
+int	print_nbr_2(unsigned int nbr)
 {
-	if (nbr < 0)
-		nbr = -nbr;
-	return (print_nbr(nbr));
+	int	len;
+
+	len = 1;
+	if (nbr > 9)
+		len += print_nbr(nbr / 10);
+	print_char((nbr % 10) + 48);
+	return (len);
 }
