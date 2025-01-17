@@ -22,4 +22,5 @@ int	print_str(char *str);
 int	print_nbr(int nbr);
 int	print_nbr_2(unsigned int nbr);
 int	printf_p(char *a);
+int	ft_printf(const char *input, ...);
 #endif

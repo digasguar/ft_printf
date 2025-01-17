@@ -60,7 +60,7 @@ int	print_nbr_2(unsigned int nbr)
 
 	len = 1;
 	if (nbr > 9)
-		len += print_nbr(nbr / 10);
+		len += print_nbr_2(nbr / 10);
 	print_char((nbr % 10) + 48);
 	return (len);
 }
